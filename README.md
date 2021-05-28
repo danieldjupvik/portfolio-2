@@ -2,4 +2,4 @@
 
 Link to live website [danieldjupvik.dev](https://danieldjupvik.dev)
 
-MovieWatcht Landing page [MovieWacht](https://danieldjupvik.dev/movieWacht)
+MovieWatcht Landing page [danieldjupvik.dev/MovieWatcht](https://danieldjupvik.dev/moviewatcht)
