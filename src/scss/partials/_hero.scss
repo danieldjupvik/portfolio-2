@@ -1,0 +1,90 @@
+.hero {
+  background-image: url('../../assets/img/hero-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__intro {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: $global-spacing * 1;
+    padding-bottom: $global-spacing * 8;
+    &--heading {
+      margin: 0;
+      font-size: 34px;
+      font-family: $heading !important;
+    }
+    &--span {
+      display: block;
+    }
+    &--name {
+      display: inline-block;
+      margin-left: 13px;
+      color: $brand-color;
+    }
+    &--dot {
+      color: $red-color;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $heading;
+  font-size: 18px;
+  &--contact-me {
+    color: $brand-color;
+    padding: $global-spacing;
+    border: solid 2px $brand-color;
+    border-radius: 10px;
+    margin-bottom: $global-spacing * 3;
+    width: 160px;
+    text-align: center;
+  }
+  &--projects {
+    color: $brand-color;
+    padding: $global-spacing;
+    border: solid 2px $brand-color;
+    border-radius: 10px;
+    width: 160px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: $max-width) {
+  .hero {
+    background-image: url('../../assets/img/hero-desktop.jpg');
+    background-position: center;
+    &__intro {
+      padding-top: 0;
+      padding-bottom: 180px;
+      &--heading {
+        font-size: 37px;
+      }
+    }
+  }
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 0;
+    &--contact-me {
+      margin-bottom: 0;
+      margin-right: $global-spacing * 3;
+    }
+    &--contact-me:hover {
+      background-color: $brand-color;
+      color: black;
+    }
+    &--projects:hover {
+      background-color: $brand-color;
+      color: black;
+    }
+  }
+}

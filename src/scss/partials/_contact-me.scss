@@ -1,0 +1,44 @@
+.contact-me {
+  &__box {
+    color: $light-grey;
+    padding: $global-spacing;
+    font-size: 18px;
+    position: relative;
+  }
+  &__box a {
+    text-decoration: underline;
+    margin-left: 50px;
+  }
+  &__box i {
+    color: $brand-color;
+    font-size: 30px;
+    vertical-align: middle;
+    position: absolute;
+  }
+}
+
+.contact-me-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $global-spacing * 3;
+}
+
+@media only screen and (min-width: $max-width) {
+  .contact-me-wrapper {
+    margin-bottom: $global-spacing * 6;
+  }
+
+  .contact-me {
+    display: flex;
+
+    &__box {
+      color: $light-grey;
+      padding: $global-spacing;
+      font-size: 18px;
+      position: relative;
+    }
+    &__box a:hover {
+      color: $brand-color;
+    }
+  }
+}

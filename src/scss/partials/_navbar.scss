@@ -1,0 +1,90 @@
+.navbar {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 170px;
+  }
+  &__navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: $global-spacing * 3;
+    &--list {
+      padding: 0 $global-spacing;
+    }
+    &--link {
+      text-decoration: none;
+    }
+    &--icon {
+      font-size: 27px;
+      color: $light-grey;
+    }
+  }
+}
+
+.active {
+  color: $brand-color !important;
+}
+
+.fixed {
+  background-color: $navbar-color !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 0 15px 1px black;
+  transform: translate(0, -200px);
+}
+
+.in-view {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  transform: translate(0, 0);
+}
+
+.in-view .navbar__logo {
+  display: none;
+}
+
+.in-view .navbar__navigation-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.in-view .navbar__navigation {
+  padding: 0;
+}
+
+@media only screen and (min-width: $max-width) {
+  .navbar {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__logo {
+      width: 160px;
+    }
+    &__navigation {
+      padding-bottom: 0;
+      &--icon:hover {
+        color: $brand-color;
+      }
+    }
+  }
+}

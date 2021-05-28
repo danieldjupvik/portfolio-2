@@ -1,0 +1,34 @@
+.main {
+  padding-top: 197.33px;
+  &__heading {
+    display: flex;
+    justify-content: center;
+    padding-top: $global-spacing * 3;
+    padding-bottom: $global-spacing * 3;
+    font-family: $heading;
+    &--h1 {
+      font-size: 30px;
+      color: white;
+      margin: 0;
+    }
+    &--firstWord {
+      color: $brand-color;
+    }
+    &--dot {
+      color: $red-color;
+    }
+  }
+}
+
+@media only screen and (min-width: $max-width) {
+  .main {
+    padding-top: 121.33px;
+    &__heading {
+      padding-top: $global-spacing * 4;
+
+      &--h1 {
+        font-size: 36px;
+      }
+    }
+  }
+}

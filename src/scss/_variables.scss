@@ -1,0 +1,24 @@
+/* Colors */
+$background-color: #1d1d1d;
+$navbar-color: #181818;
+$light-grey: #e5e5e5;
+$brand-color: #74f7d9;
+$red-color: #e10b17;
+
+/* spacing */
+$global-spacing: 1rem;
+
+/* Fonts */
+$heading: "Roboto Mono", monospace;
+$massText: "Roboto", sans-serif;
+
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* Max Width on desktop */
+$max-width: 768px;
