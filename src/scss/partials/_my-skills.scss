@@ -8,11 +8,16 @@
     background-color: $light-grey;
     color: black;
     padding: $global-spacing / 2 $global-spacing;
-    width: 135px;
+    width: 145px;
     margin: $global-spacing;
     text-align: center;
     font-weight: $semibold;
     font-size: 18px;
     box-shadow: 0 0 30px 3px black;
+    border: 3px solid transparent;
+  }
+  &--box:hover {
+    transition: 0.4s;
+    border: 3px solid $brand-color;
   }
 }

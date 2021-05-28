@@ -1,4 +1,5 @@
 const Privacy = () => {
+  document.title = 'MovieWacht | Privacy Policy';
   return (
     <div
       style={{

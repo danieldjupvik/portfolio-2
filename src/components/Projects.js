@@ -9,6 +9,11 @@ import profilePicture from '../assets/img/profile-picture.jpeg';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
+  const born = 1998;
+  var d = new Date();
+  const year = d.getFullYear();
+  const myAge = year - born;
+
   return (
     <div className='container'>
       <div className='main__heading'>
@@ -153,11 +158,11 @@ const Projects = () => {
           alt='profile'
         />
         <p className='about-section--paragraph'>
-          My name is Daniel and Im a 23 year old man from Gursken, Sunnmøre.
-          Currently living in Bergen, Norway and studying Front-end development
-          at Noroff - School of technology and digital media. My interest's are
-          everything from PC, server and web development, in my part time I run
-          a personal server.
+          My name is Daniel and Im a {myAge} year old man from Gursken,
+          Sunnmøre. Currently living in Bergen, Norway and studying Front-end
+          development at Noroff - School of technology and digital media. My
+          interest's are everything from PC, server and web development, in my
+          part time I run a personal server.
         </p>
       </div>
       <div className='main__heading'>

@@ -4,6 +4,7 @@ import downloadAppStore from '../assets/img/app-store.png';
 import downloadGooglePlay from '../assets/img/download-google-play-store-logo.png';
 
 const MovieWatcht = () => {
+  document.title = 'Daniel | MovieWatcht';
   const history = useHistory();
   const goBack = () => {
     history.goBack();
